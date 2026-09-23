@@ -230,6 +230,18 @@ th.explainable::after { left:0; transform:translate(0,4px); }.tag.explainable::a
 .account-loop-footer { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:baseline; margin-top:12px; padding:12px 0 0; border-top:1px solid var(--line); }
 .account-loop-footer span { color:var(--ai-accent); font:10px 'IBM Plex Mono',monospace; text-transform:uppercase; }
 .account-loop-footer strong { color:var(--copper-light); font-size:13px; font-weight:400; line-height:1.45; }
+.account-control-room { padding-top:16px; }
+.account-control-room .section-question { margin:0 0 12px; padding-left:0; padding-right:0; background:transparent; }
+.control-room-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); }
+.control-room-grid article { padding:13px 11px; background:rgba(231,224,213,.065); }
+.control-room-grid article > span { display:block; color:var(--ai-accent); font:10px 'IBM Plex Mono',monospace; letter-spacing:.06em; text-transform:uppercase; }
+.control-room-grid article > strong { display:block; margin:7px 0 5px; color:var(--ivory); font:13px 'IBM Plex Mono',monospace; line-height:1.4; }
+.control-room-grid small { display:block; color:var(--copper-light); font-size:12px; line-height:1.4; }
+.control-room-grid p { margin:7px 0 0; color:var(--muted); font-size:12px; line-height:1.5; }
+.control-room-note { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:baseline; margin-top:12px; padding:12px 0 0; border-top:1px solid var(--line); }
+.control-room-note span { color:var(--ai-accent); font:10px 'IBM Plex Mono',monospace; text-transform:uppercase; }
+.control-room-note strong { color:var(--copper-light); font-size:13px; font-weight:400; line-height:1.45; }
+@media (max-width:680px) { .control-room-grid { grid-template-columns:1fr; }.control-room-note { display:block; }.control-room-note strong { display:block; margin-top:6px; } }
 @media (max-width:680px) { .metric-tooltip { width:240px; }.account-loop-grid { grid-template-columns:1fr; }.account-loop-footer { display:block; }.account-loop-footer strong { display:block; margin-top:6px; } }
 .strategy-pillars small { font-size:12px; line-height:1.5; }
 .strategy-output { max-width:1020px; margin-top:24px; padding-top:18px; gap:8px; font-size:11px; }
